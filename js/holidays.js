@@ -1,0 +1,50 @@
+/* India-wide and widely observed regional festival reference dates for 2026–2027.
+   Religious dates can vary by region or official moon-sighting announcements.
+   These are calendar references, not a guarantee of company/public-holiday status. */
+window.INDIAN_HOLIDAYS = [
+  {date:'2026-01-14',name:'Makar Sankranti',type:'Festival'},
+  {date:'2026-01-26',name:'Republic Day',type:'National holiday'},
+  {date:'2026-03-04',name:'Holi',type:'Festival'},
+  {date:'2026-03-21',name:'Eid al-Fitr (tentative)',type:'Religious holiday'},
+  {date:'2026-03-26',name:'Ram Navami',type:'Festival'},
+  {date:'2026-03-31',name:'Mahavir Jayanti',type:'Festival'},
+  {date:'2026-04-03',name:'Good Friday',type:'Religious holiday'},
+  {date:'2026-05-01',name:'Buddha Purnima / Maharashtra Day',type:'Festival / regional holiday'},
+  {date:'2026-05-27',name:'Eid al-Adha (tentative)',type:'Religious holiday'},
+  {date:'2026-06-26',name:'Muharram (tentative)',type:'Religious holiday'},
+  {date:'2026-08-15',name:'Independence Day',type:'National holiday'},
+  {date:'2026-08-26',name:'Eid-e-Milad (tentative)',type:'Religious holiday'},
+  {date:'2026-09-04',name:'Janmashtami',type:'Festival'},
+  {date:'2026-09-14',name:'Ganesh Chaturthi',type:'Festival'},
+  {date:'2026-10-02',name:'Gandhi Jayanti',type:'National holiday'},
+  {date:'2026-10-20',name:'Dussehra / Vijayadashami',type:'Festival'},
+  {date:'2026-11-08',name:'Diwali / Deepavali',type:'Festival'},
+  {date:'2026-11-24',name:'Guru Nanak Jayanti',type:'Religious holiday'},
+  {date:'2026-12-25',name:'Christmas Day',type:'National holiday'},
+  {date:'2027-01-14',name:'Makar Sankranti / Lohri',type:'Festival'},
+  {date:'2027-01-15',name:'Pongal',type:'Festival'},
+  {date:'2027-01-26',name:'Republic Day',type:'National holiday'},
+  {date:'2027-02-11',name:'Vasant Panchami',type:'Festival'},
+  {date:'2027-03-06',name:'Maha Shivaratri',type:'Festival'},
+  {date:'2027-03-22',name:'Holi',type:'Festival'},
+  {date:'2027-03-26',name:'Good Friday',type:'Religious holiday'},
+  {date:'2027-04-07',name:'Gudi Padwa / Ugadi',type:'Festival'},
+  {date:'2027-04-14',name:'Ambedkar Jayanti / Vaisakhi',type:'National observance / festival'},
+  {date:'2027-04-15',name:'Ram Navami',type:'Festival'},
+  {date:'2027-04-19',name:'Mahavir Jayanti',type:'Festival'},
+  {date:'2027-05-20',name:'Buddha Purnima',type:'Festival'},
+  {date:'2027-05-17',name:'Eid al-Adha (tentative)',type:'Religious holiday'},
+  {date:'2027-06-16',name:'Muharram (tentative)',type:'Religious holiday'},
+  {date:'2027-08-15',name:'Independence Day',type:'National holiday'},
+  {date:'2027-08-17',name:'Raksha Bandhan',type:'Festival'},
+  {date:'2027-08-25',name:'Janmashtami',type:'Festival'},
+  {date:'2027-09-04',name:'Ganesh Chaturthi',type:'Festival'},
+  {date:'2027-10-02',name:'Gandhi Jayanti',type:'National holiday'},
+  {date:'2027-10-09',name:'Dussehra / Vijayadashami',type:'Festival'},
+  {date:'2027-10-29',name:'Diwali / Deepavali',type:'Festival'},
+  {date:'2027-11-14',name:'Guru Nanak Jayanti',type:'Religious holiday'},
+  {date:'2027-12-25',name:'Christmas Day',type:'National holiday'}
+];
+window.indianHolidaysForDate = function(date) {
+  return (window.INDIAN_HOLIDAYS || []).filter(h => h.date === date);
+};

@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: team-leave-calendar
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
